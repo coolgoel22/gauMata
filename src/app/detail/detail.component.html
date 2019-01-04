@@ -1,0 +1,19 @@
+<app-page-title title="Detail Page"></app-page-title>
+<div class="detail">
+  <div class="detail_img">
+    <img src="{{gavySidh.img}}" alt="{{gavySidh.name}}"/>
+  </div>
+  <div class="detail_info">
+    <h3 class="detail_name">{{gavySidh.name}}</h3>
+    <a href="tel:{{gavySidh.mobileNo}}">{{gavySidh.mobileNo}}</a>
+    <span class="detail_inline detail_email">{{gavySidh.email}}</span>
+  </div>
+  <div>
+      <span class="detail_inline"><b>Age: </b>{{gavySidh.age}}</span>
+      <span class="detail_inline"><b>Profession: </b>{{gavySidh.profession}}</span>
+      <span *ngIf="gavySidh.isFullTime">I am working <b>Full Time</b> In Panchagavyas</span>
+      <p class="detail_par"><b>Address: </b>{{gavySidh.address}}</p>
+      <p class="detail_par"><b>Working Area: </b>{{gavySidh.workingArea}}</p>
+  </div>
+</div>
+
