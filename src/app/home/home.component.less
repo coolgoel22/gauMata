@@ -1,4 +1,42 @@
 .home{
+     padding: 10px;
+     &-items{
+          margin: 20px;
+     }
+     &-item{
+          vertical-align: top;
+          display: inline-block;
+          width: ~'calc(50% - 10px)';
+          box-sizing: border-box;
+          border: 1px solid #ccc;
+          border-radius: 6px 6px 0 0;
+          padding: 20px 10px;
+          margin-bottom: 20px;
+          text-align: center;
+          &:nth-child(2n-1){
+               margin-right: 20px;
+          }
+          &:active{
+               transform: scale(0.95);
+          }
+          .fa{
+               margin-bottom: 10px;
+               font-size: 35px;
+               display: block;
+               text-align: center;
+               &.bm-color{
+                    &_red{
+                         color: red;
+                    }
+                    &_orange{
+                         color: #f7a002;
+                    }
+                    &_blogs{
+                         color: #ff9270;
+                    }
+               }
+          }
+     }
 
 }
 

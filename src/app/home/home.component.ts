@@ -23,7 +23,9 @@ export class HomeComponent implements OnInit {
   ngOnInit() {
   
   }
- 
+  goto(pageName: string){
+    this.router.navigate([pageName]);
+  }
   
   showDetail(record){
     console.log(record);
